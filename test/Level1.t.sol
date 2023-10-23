@@ -9,7 +9,7 @@ contract Level1 is Test {
     address attacker = 0x8c9D2Ed582846497b454cAFA67160F679AF90A2f;
 
     function setUp() public {
-        vm.createSelectFork(vm.rpcUrl("sepolia"));
+        vm.createSelectFork(vm.rpcUrl("sepolia"), 4545387);
         vm.startPrank(attacker);
     }
 

@@ -13,7 +13,7 @@ contract Level0 is Test {
     function setUp() public {}
 
     function testLevel0() public {
-        vm.createSelectFork(vm.rpcUrl("sepolia"));
+        vm.createSelectFork(vm.rpcUrl("sepolia"), 4539329);
         Instance level0 = Instance(0xc1baDEEf1C887313D48407240d7127dB9b793436);
         level0.authenticate(level0.password());
         assertTrue(level0.getCleared());
