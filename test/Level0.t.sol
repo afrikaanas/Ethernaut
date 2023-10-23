@@ -12,7 +12,7 @@ interface Instance {
 contract Level0 is Test {
     function setUp() public {}
 
-    function testExploit() public {
+    function testLevel0() public {
         vm.createSelectFork(vm.rpcUrl("sepolia"));
         Instance level0 = Instance(0xc1baDEEf1C887313D48407240d7127dB9b793436);
         level0.authenticate(level0.password());
